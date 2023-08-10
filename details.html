@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/details.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-navigation">
+            <!--Header menu-->
+            <div id="menu" class="header__menu">
+                <nav class="header__burger-nav">
+                    <a href="about-us.html" class="header__burger-link">About us</a>
+                    <a href="games.html" class="header__burger-link">Games</a>
+                    <a href="#t2" class="header__burger-link">Parties</a>
+                    <a href="#t2" class="header__burger-link">Rooms</a>
+                    <a href="contacts.html" class="header__burger-link">Contact us</a>
+                </nav>
+            </div>
+            <button id="burger" class="burger">
+            </button>
+            <a href="index.html" class="header__logo-img"><img src="./Image/Main/Header/LoGo.png" alt="logo"></a>
+            <nav class="header__menu_list">
+                <ul class="header-navigation__list">
+                    <li class="header-navigation__list-item"><a href="about-us.html" class="header-navigation__link-item">About us</a></li>
+                    <li class="header-navigation__list-item"><a href="games.html" class="header-navigation__link-item">Games</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Parties</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Rooms</a></li>
+                    <li class="header-navigation__list-item"><a href="contacts.html" class="header-navigation__link-item">Contact us</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="header-navigation__reservation-btn" aria-label="Reservation"></a>
+        </div>
+    </header>
+    <!--how-->
+      <section class=" main-container section-how">
+        <div class="container how-container">
+          <h2 class="section-heading section-heading__how" id="t2">How to reserve?</h2>
+          <ul class="how-container__steps-list">
+            <li class="steps-list__item"><button class="steps-list__item_btn steps-list__item_btn__active"
+                aria-label="first step" data-path="one">Step 1</button>
+            </li>
+            <li class="steps-list__item"><button class="steps-list__item_btn" aria-label="second step" data-path="two">Step 2</button></li>
+            <li class="steps-list__item"><button class="steps-list__item_btn" aria-label="third step" data-path="three">Step 3</button></li>
+            <li class="steps-list__item"><button class="steps-list__item_btn" aria-label="fourth step"
+                data-path="four">Step 4</button></li>
+          </ul>
+          <!-- first card -->
+          <div class="how-container__card how-container__card_active" data-target="one">
+            <div class="how-container__text-area how-container__text-area__first">
+              <h3 class="how-container__text-area_heading">Check the list of games</h3>
+              <p class="how-container__text-area_description">Find out what activities are available and prices </p>
+              <div class="how-container__btns">
+                <a href="reservation.html" class="how-container__text-area_btn-more" aria-label="button book">Book now</a>
+                <a href="contacts.html" class="how-container__text-area_btn-contract" aria-label="button contact">Contact us</a>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="how-container__card" data-target="two">
+            <div class="how-container__text-area how-container__text-area__second">
+              <h3 class="how-container__text-area_heading">Choose your own set/ <br>or a random games </h3>
+              <p class="how-container__text-area_description">Find out what activities are available and pricesComplete the competition from six rooms selected by our computer specifically for you and your friends OR pick up rooms for yourself and your friends and find out who is worthy of the title of champion in your company</p>
+              <div class="how-container__btns">
+                <a href="reservation.html" class="how-container__text-area_btn-more">Book now</a>
+                <a href="contacts.html" class="how-container__text-area_btn-contract">Contact us</a>
+              </div>
+            </div>
+          </div>
+          <!-- third card-->
+          <div class="how-container__card" data-target="three">
+            <div class="how-container__text-area how-container__text-area__third">
+              <h3 class="how-container__text-area_heading">Make a reservation</h3>
+              <p class="how-container__text-area_description">Go to the final stage of registration, choose a date and time convenient for you and wait for confirmation.Players will arrive at the reception to register and receive the bracelets activated for the selected activities. Swipe your bracelet at the start of each activity to activate the station</p>
+              <div class="how-container__btns">
+                <a href="reservation.html" class="how-container__text-area_btn-more">Book now</a>
+                <a href="contacts.html" class="how-container__text-area_btn-contract">Contact us</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- fourth-card -->
+          <div class="how-container__card" data-target="four">
+            <div class="how-container__text-area how-container__text-area__fourth">
+              <h3 class="how-container__text-area_heading">Enjoy time with yor Fiends!</h3>
+              <p class="how-container__text-area_description">It's time to enjoy the moment and try yourself in various sports games.</p>
+              <div class="how-container__btns">
+                <a href="reservation.html" class="how-container__text-area_btn-more">Book now</a>
+                <a href="contacts.html" class="how-container__text-area_btn-contract">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-content__navigation">
+            <div class="footer-content__social-media">
+              <ul class="social-media__list">
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__fb-link"
+                    aria-label="facebook"></a>
+                </li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__vk-link"
+                    aria-label="вконтакте"></a></li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__inst-link"
+                    aria-label="instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+      <!-- burger -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#burger').addEventListener('click', function () {
+        document.querySelector('#menu').classList.toggle('is-active')
+      })
+    })
+    const burger = document.querySelector('.burger')
+    burger.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('burger--active')
+    })
+  </script>
+    <!-- tabs -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.steps-list__item_btn').forEach(function (tabsBtn) {
+          tabsBtn.addEventListener('click', function (event) {
+            const path = event.currentTarget.dataset.path
+  
+            document.querySelectorAll('.how-container__card').forEach(function (tabContent) {
+              tabContent.classList.remove('how-container__card_active')
+            })
+            document.querySelector(`[data-target="${path}"]`).classList.add('how-container__card_active')
+  
+            document.querySelectorAll('.steps-list__item_btn').forEach(function (activeBtn) {
+              activeBtn.classList.remove('how-container__card_active')
+            })
+            event.currentTarget.classList.add('steps-list__item_btn__active')
+          })
+        })
+      })
+    </script>
+</body>
+</html>

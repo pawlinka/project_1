@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/reservation.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-navigation">
+            <!--Header menu-->
+            <div id="menu" class="header__menu">
+                <nav class="header__burger-nav">
+                    <a href="about-us.html" class="header__burger-link">About us</a>
+                    <a href="games.html" class="header__burger-link">Games</a>
+                    <a href="#t2" class="header__burger-link">Parties</a>
+                    <a href="#t2" class="header__burger-link">Rooms</a>
+                    <a href="contacts.html" class="header__burger-link">Contact us</a>
+                </nav>
+            </div>
+            <button id="burger" class="burger">
+            </button>
+            <a href="index.html" class="header__logo-img"><img src="./Image/Main/Header/LoGo.png" alt="logo"></a>
+            <nav class="header__menu_list">
+                <ul class="header-navigation__list">
+                    <li class="header-navigation__list-item"><a href="about-us.html" class="header-navigation__link-item">About us</a></li>
+                    <li class="header-navigation__list-item"><a href="games.html" class="header-navigation__link-item">Games</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Parties</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Rooms</a></li>
+                    <li class="header-navigation__list-item"><a href="contacts.html" class="header-navigation__link-item">Contact us</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="header-navigation__reservation-btn" aria-label="Reservation"></a>
+        </div>
+    </header>
+    <!--main-->
+  <main class="main-container">
+    <section class="section-about-us">
+      <div class="container about-us-container">
+          <div class="about-us-container__cards">
+            <div class="about-us-container__first-card">
+              <div class="first-card__content">
+                <p class="first-card__description">Crazy golf, rugby pass, baseball hitter and a lot more!</p>
+                <a href="details.html" class="first-card__link-btn">Details</a>
+              </div>
+            </div>
+            <div class="about-us-container__last-cards">
+              <div class="last-cards last-cards__first">
+                <div class="last-cards__first_img-area"></div>
+                <div class="last-cards__text-area">
+                  <h3 class="last-cards__heading">Book random Rooms</h3>
+                  <p class="last-cards__description">Pass the test of six rooms selected by our computer specifically for you and your friends</p>
+                </div>
+              </div>
+              <div class="last-cards last-cards__second">
+                <div class="last-cards__second_img-area"></div>
+                <div class="last-cards__text-area">
+                  <h3 class="last-cards__heading">Book your rooms </h3>
+                  <p class="last-cards__description">Pick up rooms for yourself and your friends and find out who is worthy of the title of champion in your company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div> 
+         <div class="button">
+          <a href="reservation.html" class="hero-container__link-btn"><p>Reservation</p><img class="hero-container__img-btn" src="../Project/Image/Main/Icons/reservation_icon.svg" alt="reservation"></a>
+         </div>
+    </section>
+  </main>  
+    <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-content__navigation">
+            <div class="footer-content__social-media">
+              <ul class="social-media__list">
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__fb-link"
+                    aria-label="facebook"></a>
+                </li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__vk-link"
+                    aria-label="вконтакте"></a></li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__inst-link"
+                    aria-label="instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+      <!-- burger -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#burger').addEventListener('click', function () {
+        document.querySelector('#menu').classList.toggle('is-active')
+      })
+    })
+    const burger = document.querySelector('.burger')
+    burger.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('burger--active')
+    })
+  </script>
+</body>
+</html>

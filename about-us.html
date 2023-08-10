@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/about-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- accordion -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-navigation">
+            <!--Header menu-->
+            <div id="menu" class="header__menu">
+                <nav class="header__burger-nav">
+                    <a href="about-us.html" class="header__burger-link">About us</a>
+                    <a href="games.html" class="header__burger-link">Games</a>
+                    <a href="#t2" class="header__burger-link">Parties</a>
+                    <a href="#t2" class="header__burger-link">Rooms</a>
+                    <a href="contacts.html" class="header__burger-link">Contact us</a>
+                </nav>
+            </div>
+            <button id="burger" class="burger">
+            </button>
+            <a href="index.html" class="header__logo-img"><img src="./Image/Main/Header/LoGo.png" alt="logo"></a>
+            <nav class="header__menu_list">
+                <ul class="header-navigation__list">
+                    <li class="header-navigation__list-item"><a href="about-us.html" class="header-navigation__link-item">About us</a></li>
+                    <li class="header-navigation__list-item"><a href="games.html" class="header-navigation__link-item">Games</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Parties</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Rooms</a></li>
+                    <li class="header-navigation__list-item"><a href="contacts.html" class="header-navigation__link-item">Contact us</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="header-navigation__reservation-btn" aria-label="Reservation"></a>
+        </div>
+    </header>
+    <!--Section Hero-->
+    <main class="main-container">
+      <section class="section-hero">
+          <div class="container hero-container"> 
+          <div class="hero-container__content">
+              <h1 class="hero-container__heading">OneTwoSport is sport recreational center where people can come and try different kind of sports - its most attractive elements!</h1>
+              <a href="reservation.html" class="hero-container__link-btn"><p>Reservation</p><img class="hero-container__img-btn" src="../Project/Image/Main/Icons/reservation_icon.svg" alt="reservation"></a>
+          </div>
+        </div>
+      </section>
+      <!--Section Text About US-->
+      <section class="container section-about-us"> 
+        <div class="about-us__heading">
+          <h1>About Us</h1>
+          <h3>Unique center of recreational activity</h3>
+          <p>IT CONTAINS THE BEST ELEMENTS OF KEY SPORTS, IN AN INCREDIBLY WARM AND OPEN SPACE AT ANY TIME OF THE YEAR. Each sports room (i.e. baseball, ice hockey, cricket and others) is prepared as much as possible identical to professional sports with the use of professional equipment.</p>
+        </div>
+      </section> 
+      <section class="container section-information">
+          <h1>Discover the Sport World  with us</h1>
+          <div class="information-content">
+            <div class="information__cards">
+              <img src="../Project/Image/Main/Icons/space.png" alt="image-01">
+              <h3>The total area of 1500 m2 for your events</h3>
+              <p> A lot of space to feel free</p>
+            </div>
+            <div class="information__cards ">
+              <img src="../Project/Image/Main/Icons/sport2.png" alt="space">
+              <h3>More than 15 sports games</h3>
+              <p>Games for companies of up to 8 people in one room</p>
+            </div>
+            <div class="information__cards">
+              <img src="../Project/Image/Main/Icons/win.png" alt="win">
+              <h3>Conducting tournaments</h3>
+              <p>Unique games especially for big and small teams</p>
+            </div>
+            <div class="information__cards ">
+              <img src="./Image/Main/Icons/friends.png" alt="friends">
+              <h3>Individual scenarios of the event</h3>
+              <p>We will hold an event taking into account your preferences</p>
+            </div>
+            <div class="information__cards ">
+              <img src="../Project/Image/Main/Icons/star.png" alt="star">
+              <h3>Our main target group is families and children</h3>
+              <p>Everyone will find a favorite activity here</p>
+            </div>
+            <div class="information__cards">
+              <img src="../Project/Image/Main/Icons/sport1.png" alt="image-01">
+              <h3>Try a professional sport and choose your own</h3>
+              <p>The basic element  of professional sports</p>
+            </div>
+          </div>
+      </section>     
+       <!--Section FAQ-->
+       <section class="section-faq">
+        <div class="container faq-container">
+          <h2 class="section-heading section-heading__faq">FAQ</h2>
+          <ul class="faq-container__list" id="accordion">
+            <!-- блок 1 -->
+            <li class="faq-container__list_item" tabindex="0">
+              <div class="faq-container__accordion_heading">
+                <p class="list_item__text-content">Do I need to book in advance?</p><span
+                  class="faq-container__icon"></span>
+              </div>
+              <div class="faq-container__accordion_content">
+                <p class="faq-container__accordion_description">You don't, but it's definitely recommended - especially on the weekends. You can learn whether there are spots available for our activities on site at our reception desk.</p>
+              </div>
+            </li>
+            <!-- блок 2 -->
+            <li class="faq-container__list_item" tabindex="0">
+              <div class="faq-container__accordion_heading" tabindex="0">
+                <p class="list_item__text-content">I have a reservation - how early should I come?</p>
+                <span class="faq-container__icon"></span>
+              </div>
+              <div class="faq-container__accordion_content">
+                <p class="faq-container__accordion_description">It's best to arrive at least 20 minutes prior to your booking in order to start on time. If you come even earlier, you will have more time to order something at one of our restaurant!</p>
+              </div>
+            </li>
+            <!-- блок 3 -->
+            <li class="faq-container__list_item" tabindex="0">
+              <div class="faq-container__accordion_heading">
+                <p class="list_item__text-content">Is there a private parking?</p> <span
+                  class="faq-container__icon"></span>
+              </div>
+              <div class="faq-container__accordion_content">
+                <p class="faq-container__accordion_description">
+                   If you're planning on coming by car, there are plenty of parking spots nearby.</p>
+              </div>
+            </li>
+            <!-- блок 4 -->
+            <li class="faq-container__list_item" tabindex="0">
+              <div class="faq-container__accordion_heading">
+                <p class="list_item__text-content">Do I need to know the rules of the activity I booked?</p><span class="faq-container__icon"></span>
+              </div>
+              <div class="faq-container__accordion_content">
+                <p class="faq-container__accordion_description">Yes, you do, but that's not a problem as our trained staff can teach you everything on site! All of our activities take less than 2 minutes to learn.</p>
+              </div>
+            </li>
+            <!-- блок 5 -->
+            <li class="faq-container__list_item" tabindex="0">
+              <div class="faq-container__accordion_heading">
+                <p class="list_item__text-content">Do you accept large group bookings?</p><span
+                  class="faq-container__icon"></span>
+              </div>
+              <div class="faq-container__accordion_content">
+                <p class="faq-container__accordion_description">
+                  Of course! We have a space of over 1500m2 with tons of different options. For groups of up to 8 people, we recommend booking our activities. For larger groups, it's best to contact us via contact form or phone in order to determine all the details in advance - for more information, please see the Reservation tab.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>    
+
+    <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-content__navigation">
+            <div class="footer-content__social-media">
+              <ul class="social-media__list">
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__fb-link"
+                    aria-label="facebook"></a>
+                </li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__vk-link"
+                    aria-label="вконтакте"></a></li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__inst-link"
+                    aria-label="instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+      <!-- burger -->
+      <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('#burger').addEventListener('click', function () {
+          document.querySelector('#menu').classList.toggle('is-active')
+        })
+      })
+      const burger = document.querySelector('.burger')
+      burger.addEventListener('click', (e) => {
+        e.currentTarget.classList.toggle('burger--active')
+      })
+    </script>
+    <!-- accordion -->
+    <script>
+      $(function () {
+        $("#accordion").accordion({
+          active: false,
+          collapsible: true,
+          heightStyle: "content"
+        })
+      })
+    </script>
+</body>
+</html>

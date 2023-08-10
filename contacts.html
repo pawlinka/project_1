@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-navigation">
+            <!--Header menu-->
+            <div id="menu" class="header__menu">
+                <nav class="header__burger-nav">
+                    <a href="about-us.html" class="header__burger-link">About us</a>
+                    <a href="games.html" class="header__burger-link">Games</a>
+                    <a href="#t2" class="header__burger-link">Parties</a>
+                    <a href="#t2" class="header__burger-link">Rooms</a>
+                    <a href="contacts.html" class="header__burger-link">Contact us</a>
+                </nav>
+            </div>
+            <button id="burger" class="burger">
+            </button>
+            <a href="index.html" class="header__logo-img"><img src="./Image/Main/Header/LoGo.png" alt="logo"></a>
+            <nav class="header__menu_list">
+                <ul class="header-navigation__list">
+                    <li class="header-navigation__list-item"><a href="about-us.html" class="header-navigation__link-item">About us</a></li>
+                    <li class="header-navigation__list-item"><a href="games.html" class="header-navigation__link-item">Games</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Parties</a></li>
+                    <li class="header-navigation__list-item"><a href="#t2" class="header-navigation__link-item">Rooms</a></li>
+                    <li class="header-navigation__list-item"><a href="contacts.html" class="header-navigation__link-item">Contact us</a></li>
+                </ul>
+            </nav>
+            <a href="reservation.html" class="header-navigation__reservation-btn" aria-label="Reservation"></a>
+        </div>
+    </header>
+    <!--dla primera-->
+      <main class="main-container">
+        <section class=" container contact-content">
+              <div class="contact-heading">
+                  <div class="contact-heading__adress">
+                    <h2 class="contact-heading">Adress</h2>
+                    <p class="contact-text">Ludwika Rydygiera 11A<br />
+                      01-793 Warsaw</p>
+                    <a href="https://www.google.pl/maps/place/Ludwika+Rydygiera+11A,+01-793+Warszawa/@52.2593184,20.9754892,17z/data=!3m1!4b1!4m5!3m4!1s0x471ecb91df03e835:0x61a77e9a4606b298!8m2!3d52.2593151!4d20.9776779" target="_blank" class="footer-text footer-text--map">See on Google Maps</a>
+                  </div>
+                  <div class="contact-heading__timetable">
+                    <h2 class="contact-heading">Opening hours</h2>
+                    <p class="contact-text">Monday - Thursday<br>16 AM -1 AM</p>
+                    <p class="contact-text">Friday <br>16 AM - 3 AM</p>
+                    <p class="contact-text">Saturday<br>12 AM - 3 AM </p>
+                    <p class="contact-text">Sunday <br>12 AM - 1 AM</p>
+                  </div>
+              </div> 
+              <div class="contact-content__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.5753278669654!2d20.97409435443028!3d52.25911590854121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb91df03e835%3A0x61a77e9a4606b298!2sLudwika%20Rydygiera%2011A%2C%2001-793%20Warszawa!5e0!3m2!1sru!2spl!4v1674412665888!5m2!1sru!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>  
+        </section>
+        <section class="section-form container"> 
+          <div class="contact-content__form">
+            <h2 class="form__heading">Contact</h2>
+            <form  name="aplication form"
+              class="form__body">
+              <input type="text" name="name" class="form__item_name" required placeholder="Your name">
+              <input type="email" name="email" class="form__item_mail" required placeholder="E-mail*">
+              <input type="text" name="message" class="form__item_message" placeholder="Message">
+              <div class="form__submit-area">
+                <label aria-label="the field for checking the data processing agreement" tabindex="0"
+                  for="check" class="submit-area__agree-check"><input class="checkbox" id="check" type="checkbox"
+                    name="agreement checkbox" value="agree" checked>I agree to the terms and conditions and the privacy policy<span></span>
+                </label>
+                <button class="submit-area__btn">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-content__info">
+            <p class="contact-content__info_description"><span style="color: #FF3867;">Contacy us</span>  - our customer care team are available to help everyday from 11 AM to 7 PM <br>
+              <span style="color: #FF3867;">tel. 22 123 55 66</span>
+            </p>
+          </div>
+        </section>
+      </main>
+    <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-content__navigation">
+            <div class="footer-content__social-media">
+              <ul class="social-media__list">
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__fb-link"
+                    aria-label="facebook"></a>
+                </li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__vk-link"
+                    aria-label="вконтакте"></a></li>
+                <li class="social-media__list_item"><a href="#" class="social-media__link social-media__inst-link"
+                    aria-label="instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+      <!-- burger -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#burger').addEventListener('click', function () {
+        document.querySelector('#menu').classList.toggle('is-active')
+      })
+    })
+    const burger = document.querySelector('.burger')
+    burger.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('burger--active')
+    })
+  </script>
+</body>
+</html>
